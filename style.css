@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --primary-color: rgba(255, 255, 255, 1);
+    --secondary-color: rgba(255, 255, 255, 0.5);
+    --tertiary-color: rgba(230, 83, 60, 1);
+    --quaternary-color: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: var(--quaternary-color);
+    color: var(--primary-color);
+}
+/* Navbar related css */
+nav{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+nav>h2{
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-style: italic;
+    color: var(--tertiary-color);
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    border: 2px solid rgba(70, 63, 63, 0.5);
+    border-radius: 30px;
+    padding: 5px 8px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li:first-child{
+    background-color: var(--tertiary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    transition: all ease-in-out .5s;
+}
+
+nav ul li:hover a{
+    background-color: var(--tertiary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
