@@ -250,6 +250,56 @@ header>section .banner-image .tooltip-2 .ball{
 .training-exercise .image-container .image-5 img{mix-blend-mode: multiply;}
 .training-exercise .image-container .image-6{background: rgba(0, 72, 255, 0.9);}
 .training-exercise .image-container .image-6 img{mix-blend-mode: multiply;}
+/* Meet our team related css */
+.meet-our-team{
+    max-width: 1060px;
+    margin: 50px auto;
+}
+.meet-our-team .content{
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+}
+.meet-our-team .content h2{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.meet-our-team .content p{
+    color: var(--secondary-color);
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.meet-our-team .image-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: #222222;
+    padding: 25px;
+    border-radius: 20px;
+}
+.meet-our-team .image-container .box{
+    width: 325px;
+    height: 275px;
+    position: relative;
+}
+.meet-our-team .image-container .box img {
+    width: 100%; 
+    height: 100%;
+    border-radius: 20px;
+}
+.meet-our-team .image-container .box .text{
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+.meet-our-team .image-container .box-1 .text h4{
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+.meet-our-team .image-container .box-1 .text p{
+    color: var(--secondary-color);
+}
 
 
 
@@ -281,4 +331,9 @@ header>section .banner-image .tooltip-2 .ball{
     .training-exercise .image-container .image-3,
     .training-exercise .image-container .image-6{display: none;}
     
+    .meet-our-team .image-container{
+        flex-direction: column; 
+        align-items: center;
+    }
+    .meet-our-team .image-container .box{width: 100%; height: 100%; margin-bottom: 10px;}
 }
