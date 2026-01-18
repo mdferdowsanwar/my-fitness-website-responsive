@@ -74,7 +74,7 @@ header>section .banner-content{
     width: 50%;
 }
 header>section .banner-content>h1{
-    font-size: 4.75rem;
+    font-size: 4rem;
     font-weight: 900;
 }
 header>section .banner-content>p{
@@ -141,8 +141,44 @@ header>section .banner-image .tooltip-2 .ball{
     background: var(--tertiary-color);
     border-radius: 50%;
 }
-
-
+/* Change your habit related css */
+.change-your-habit{
+    max-width: 1060px;
+    margin: 50px auto;
+}
+.change-your-habit .content{
+    max-width: 670px;
+    margin: 30px auto;
+    text-align: center;
+}
+.change-your-habit .content h2{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.change-your-habit .content p{
+    color: var(--secondary-color);
+    margin: 10px auto;
+}
+.change-your-habit .cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+}
+.change-your-habit .cards .single-card{
+    text-align: center;
+}
+.change-your-habit .cards .single-card img{
+    border-radius: 50%;
+}
+.change-your-habit .cards .single-card h3{
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.change-your-habit .cards .single-card p{
+    color: var(--secondary-color);
+}
 
 
 /* Media query css for mobile */
@@ -156,5 +192,8 @@ header>section .banner-image .tooltip-2 .ball{
     header>section .banner-content .btn-group{justify-content: center;}
     header>section .banner-image{justify-content: center;}
     header>section .banner-image .tooltip-1{top: 35%; right: 5%;}
+
+    .change-your-habit .cards{grid-template-columns: 1fr;}
+    .change-your-habit .cards .single-card{margin-bottom: 25px;}
     
 }
